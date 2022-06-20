@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+<title>Rebecca's Weather Project</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<h1>Hosted with <a href="https://www.netlify.com">Netlify</a></h1>
+<div class="container">
+  <div class="weather-app">
+  <div class="row">
+    <div class="col-9">
+      <form class="d-flex search-bar" id= "search-form" role="search">
+        <input class="form-control me-2"  type="search" 
+        placeholder="Enter a city..." aria-label="Search" id="city-input">
+        <button class="btn search-button" type="submit">
+     🔍
+        </button>
+      </form>
+      </div>
+        <div class="col-3">
+                <div class="current-location"></div>
+        <button class="btn btn-success w-100 current-location-btn " id="current-location-button">Current Location</button>
+      </div>
+        </div>
+<div class="row">
+  <div class="col-4">
+  <h2 id="city"></h2>
+  <ul>
+    <li id="current-date">
+    </li>
+  </ul>
+  </div>
+  <div class="col-4">
+    <div class="clearfix">
+     <span class="temperature" id="temperature"></span>
+   <span class="units">°C</span>
+     <p class="condition" id="temperature-description"></p>
+  </div>
+  </div>
+  <div class="col-4">
+    <ul>
+      <br>
+      <li>
+   <span id="advice"><strong>Have a lovely day!🌞</strong></span>
+</li>
+      <li>
+        <strong>Humidity:</strong> <span id="humidity"></span>%
+      </li>
+<li>
+  <strong>Wind: </strong><span id="wind"></span>km/h
+</li>
+    </ul>
+  </div>
+  </div>
+</div>
+</div>
+<script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+li {
+  list-style: none;
+}
+
+.search-bar {
+  margin: 20px 0px 40px 5px;
+
+}
+
+.current-location-btn {
+  padding: 10px;
+  margin: 20px 25px 40px 0px;
+}
+
+.search-button{
+  font-size: 25px;
+}
+
+.weather-app{
+  border: 1px solid #DADCE0;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.temperature {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+}
+
+.weather-icon{
+  height: 75px;
+  margin-right: 10px;
+}
+.units {
+position: relative;
+top: -10px;
+}
+
+.condition {
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  left: 30px;
+  top: -15px;
+}
