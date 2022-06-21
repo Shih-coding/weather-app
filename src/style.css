@@ -31,17 +31,19 @@ li {
 .pin-location {
   font-size: 35px;
   position: relative;
-  top: 14px;
+  top: 10px;
+  right: 10px;
 }
 .city{
   position: relative;
-  left: 47px;
-  top: -30px
+  left: 37px;
+  top: -33px;
+  font-size: 32px;
 }
 
 .current-time {
   position: relative;
-  left: -10px;
+  right: 20px;
   top:-30px;
 }
 .temperature {
@@ -52,9 +54,9 @@ li {
   top: 10px;
 }
 
-.weather-tempertature img{
+.weather-temperature img{
   height: 75px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .units {
 position: relative;
@@ -66,7 +68,12 @@ font-size: 14px;
   font-size: 15px;
   text-align: center;
   position: relative;
-  left: 30px;
-  top: -15px;
+  right: 20px;
+  top: 0px;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  text-align: center;
 }
 
