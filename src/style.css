@@ -16,6 +16,11 @@ li {
   font-size: 25px;
 }
 
+.weather-app-wrapper {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
 .weather-app{
   border: 1px solid #DADCE0;
   padding: 20px;
@@ -47,13 +52,14 @@ li {
   top: 10px;
 }
 
-.weather-icon{
+.weather-tempertature img{
   height: 75px;
   margin-right: 10px;
 }
 .units {
 position: relative;
 top: -10px;
+font-size: 14px;
 }
 
 .condition {
