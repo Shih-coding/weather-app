@@ -9,7 +9,7 @@ li {
 
 .current-location-btn {
   padding: 10px;
-  margin: 20px 25px 40px 0px;
+  margin: 20px 30px 40px 0px;
 }
 
 .search-button{
@@ -23,6 +23,22 @@ li {
   max-width: 800px;
 }
 
+.pin-location {
+  font-size: 32px;
+  position: relative;
+  top: 10px;
+}
+.city{
+  position: relative;
+  left: 40px;
+  top: -30px
+}
+
+.current-time {
+  position: relative;
+  left: 10px;
+  top:-30px;
+}
 .temperature {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 45px;
@@ -48,6 +64,3 @@ top: -10px;
   top: -15px;
 }
 
-.open-source-link {
-text-align: right;
-}
