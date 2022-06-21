@@ -24,19 +24,19 @@ li {
 }
 
 .pin-location {
-  font-size: 32px;
+  font-size: 35px;
   position: relative;
-  top: 10px;
+  top: 14px;
 }
 .city{
   position: relative;
-  left: 40px;
+  left: 47px;
   top: -30px
 }
 
 .current-time {
   position: relative;
-  left: 10px;
+  left: -10px;
   top:-30px;
 }
 .temperature {
