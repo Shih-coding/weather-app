@@ -49,12 +49,17 @@ timeElement.innerHTML = formatTime(currentTime);
 
 function displayWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
+  let temperatureDescription = document.querySelector("#background-image");
+  temperatureDescription = response.data.weather[0].main;
 
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(celsiusTemperature);
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = Math.round (response.data.wind.speed);
-document.querySelector("#temperature-description").innerHTML =
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#temperature-description").innerHTML =
     response.data.weather[0].description;
   let iconElement = document.querySelector("#weather-icon");
   iconElement.setAttribute(
@@ -62,7 +67,41 @@ document.querySelector("#temperature-description").innerHTML =
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  if (temperatureDescription === "clear") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/clear.jpg);`
+    );
+  } else if (temperatureDescription === "clouds") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/clouds.jpg);`
+    );
+  } else if (temperatureDescription === "rain || drizzle") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/rain.jpg);`
+    );
+  } else if (temperatureDescription === "mist || haze") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/mist.jpg);`
+    );
+  } else if (temperatureDescription === "thunderstorm") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/thunderstorm.jpg);`
+    );
+  } else if (temperatureDescription === "snow") {
+    backgroundImage.setAttribute(
+      "style",
+      `background-image:url(src/snow.jpg);`
+    );
+  }
 }
+
+
 
 function searchCity (city) {
   let apiKey = "601d6d06ce387ac1305b54eb7df93ac7";
@@ -98,7 +137,7 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
-
+ 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -107,7 +146,9 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+
 let celsiusTemperature = null;
+
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);

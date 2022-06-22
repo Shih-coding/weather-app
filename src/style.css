@@ -26,7 +26,11 @@ li {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
+  background: white;
+  opacity: 0.9;
+  border-radius: 30px;
 }
+
 
 .pin-location {
   font-size: 35px;
@@ -61,7 +65,8 @@ li {
 .units {
 position: relative;
 top: -10px;
-font-size: 14px;
+font-size: 15px;
+font-weight: 500;
 }
 
 .condition {
@@ -89,5 +94,12 @@ font-size: 14px;
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.dress-advice{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #497285;
 }
 

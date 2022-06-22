@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-<div class="container">
-  <div class="weather-app-wrapper">
+<div class="container" id="background-image">
   <div class="weather-app">
   <div class="row">
     <div class="col-9">
@@ -42,7 +41,7 @@
     <div class="clearfix weather-temperature">
       <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" id="weather-icon" class=" float-right"/>
      <span class="temperature" id="temperature"></span>
-   <span class="float-left units"><a href="#" id= "celsius-link" class="active"><strong>°C</strong></a> | <a href="#" id="fahrenheit-link" class="fah"><strong>°F</strong></a></span>
+   <span class="float-left units"><a href="#" id= "celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link" class="fah">°F</a></span>
      <p class="condition" id="temperature-description"></p>
   </div>
   </div>
@@ -50,7 +49,7 @@
     <ul>
       <br>
       <li>
-   <span id="advice"><strong>Have a lovely day!🌞</strong></span>
+   <span id="advice" class="dress-advice"></span>
 </li>
       <li>
         <strong>Humidity:</strong> <span id="humidity"></span>%
@@ -61,8 +60,6 @@
     </ul>
   </div>
   </div>
-
-</div>
 <small>
   This project was coded by Rebecca Shih and is  <a href="https://github.com/Shih-coding/weather-app">open-sourced on GitHub</a> and  <a href="https://main--dreamy-pastelito-da9c2b.netlify.app/">hosted on Netlify </a>
   </small>
