@@ -49,8 +49,6 @@ timeElement.innerHTML = formatTime(currentTime);
 
 function displayWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
-  let temperatureDescription = document.querySelector("#background-image");
-  temperatureDescription = response.data.weather[0].main;
 
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
@@ -68,11 +66,14 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
+  let temperatureDescription = response.data.weather[0].main;
+  let backgroundImage = document.querySelector("#background-image");
+  
   if (temperatureDescription === "clear") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/clear.jpg);`
-    );
+    ); 
   } else if (temperatureDescription === "clouds") {
     backgroundImage.setAttribute(
       "style",
