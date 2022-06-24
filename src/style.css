@@ -56,14 +56,14 @@ li {
   font-weight: 500;
   position: relative;
   top: -2px;
-  left: -10px;
+  left: -30px;
 }
 
 .weather-temperature img{
   height: 120px;
   margin-left: 10px;
   position: relative;
-  left: 0px;
+  left: -15px;
   top: -15px;
 }
 .units {
@@ -71,15 +71,19 @@ position: relative;
 top: -22px;
 font-size: 15px;
 font-weight: 500;
-left: -10px;
+left: -30px;
+}
+
+.units a {
+  text-decoration: none;
 }
 
 .condition {
   font-size: 15px;
   text-align: center;
   position: relative;
-  right: 15px;
-  top: -35px;
+  right: 37px;
+  top: -40px;
   text-transform: capitalize;
 }
 
@@ -87,10 +91,6 @@ left: -10px;
   text-align: left;
   position: relative;
   right: 20px;
-}
-
-.units a {
-  text-decoration: none;
 }
 
 .weather-temperature .active {
