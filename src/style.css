@@ -102,4 +102,8 @@ left: 10px;
   text-decoration: none;
 }
 
+.container {
+  max-width:none;
+}
+
 

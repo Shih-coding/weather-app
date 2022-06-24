@@ -69,32 +69,32 @@ function displayWeatherCondition(response) {
   let temperatureDescription = response.data.weather[0].main;
   let backgroundImage = document.querySelector("#background-image");
   
-  if (temperatureDescription === "clear") {
+  if (temperatureDescription === "Clear") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/clear.jpg);`
     ); 
-  } else if (temperatureDescription === "clouds") {
+  } else if (temperatureDescription === "Clouds") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/clouds.jpg);`
     );
-  } else if (temperatureDescription === "rain || drizzle") {
+  } else if (temperatureDescription === "Rain") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/rain.jpg);`
     );
-  } else if (temperatureDescription === "mist || haze") {
+  } else if (temperatureDescription === "Mist") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/mist.jpg);`
     );
-  } else if (temperatureDescription === "thunderstorm") {
+  } else if (temperatureDescription === "Thunderstorm") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/thunderstorm.jpg);`
     );
-  } else if (temperatureDescription === "snow") {
+  } else if (temperatureDescription === "Snow") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/snow.jpg);`
