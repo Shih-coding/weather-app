@@ -55,22 +55,23 @@ li {
   font-size: 45px;
   font-weight: 500;
   position: relative;
-  top: 10px;
-  left: 10px;
+  top: -2px;
+  left: -10px;
 }
 
 .weather-temperature img{
-  height: 90px;
+  height: 120px;
   margin-left: 10px;
   position: relative;
-  left:15px;
+  left: 0px;
+  top: -15px;
 }
 .units {
 position: relative;
-top: -10px;
+top: -22px;
 font-size: 15px;
 font-weight: 500;
-left: 10px;
+left: -10px;
 }
 
 .condition {
@@ -78,14 +79,14 @@ left: 10px;
   text-align: center;
   position: relative;
   right: 15px;
-  top: -5px;
+  top: -35px;
   text-transform: capitalize;
 }
 
 .weather-details {
   text-align: left;
   position: relative;
-  right: 10px;
+  right: 20px;
 }
 
 .units a {
