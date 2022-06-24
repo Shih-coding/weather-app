@@ -43,8 +43,6 @@ function formatTime(time) {
   return `${day}, ${date} ${month} <br> ${hours}:${minutes}`;
 }
 
-
-
 let timeElement = document.querySelector("#current-date");
 let currentTime = new Date();
 timeElement.innerHTML = formatTime(currentTime);
