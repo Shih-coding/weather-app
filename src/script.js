@@ -132,7 +132,7 @@ function displayWeatherCondition(response) {
       "style",
       `background-image:url(src/rain.jpg);`
     );
-  } else if (temperatureDescription === "Mist") {
+  } else if (temperatureDescription === "Mist" || "Fog" || "Haze") {
     backgroundImage.setAttribute(
       "style",
       `background-image:url(src/mist.jpg);`
