@@ -52,7 +52,7 @@ function formatDay(timestamp) {
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  return day[days];
+  return days[day];
 }
 
 function displayForecast(response) {
